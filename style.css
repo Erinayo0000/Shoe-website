@@ -31,7 +31,9 @@ nav {
   list-style: none;
 }
 
-a {
+a,
+li {
+  font-size: 18px;
   text-decoration: none;
   cursor: pointer;
   color: #300631;
@@ -84,7 +86,7 @@ a {
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 24px;
+  font-size: 22px;
   padding: 1rem 4rem;
   background-color: #3c073d;
   color: #ffffff;
@@ -98,4 +100,15 @@ h2 {
 }
 span {
   color: #240425;
+}
+img {
+  width: 380px;
+}
+.Cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 2rem;
+  gap: 1.5rem;
 }
