@@ -6,26 +6,38 @@
   box-sizing: border-box;
 }
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
-  height: 70px;
+  height: 60px;
   background-color: #ffffff;
+  z-index: 1;
 }
 body {
   font-family: "Poppins", sans-serif;
 }
-nav,
-ul,
-li {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 2rem;
+  height: 60px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 6rem;
   list-style: none;
-  margin: 0.5rem 3rem;
-  font-size: 18px;
-  color: #3c073d;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #300631;
+}
+.home {
+  font-weight: bold;
 }
 .Signin-btn {
   padding: 1rem 4rem;
@@ -33,7 +45,8 @@ li {
   color: #ffffff;
   border: none;
   border-radius: 12px;
-  font-size: 18px;
+  font-size: 16px;
+  cursor: pointer;
 }
 .background-image {
   position: relative;
@@ -41,7 +54,7 @@ li {
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: -1;
+  z-index: 0;
   background-image: url("./IMAGES/HERO-IMG.jpg");
   background-size: cover;
   background-position: center;
@@ -68,7 +81,6 @@ li {
 }
 .shopbutton {
   position: absolute;
-  position: absolute;
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -78,4 +90,12 @@ li {
   color: #ffffff;
   border: none;
   border-radius: 12px;
+  cursor: pointer;
+}
+h2 {
+  text-align: center;
+  margin: 2rem;
+}
+span {
+  color: #240425;
 }
