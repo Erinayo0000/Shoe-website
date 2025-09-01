@@ -10,10 +10,9 @@ for (let i = 0; i < button.length; i++) {
   span[i].onclick = function () {
     modal[i].style.display = "none";
   };
+  modal[i].onclick = function (removeBg) {
+    if (removeBg.target === modal[i]) {
+      modal[i].style.display = "none";
+    }
+  };
 }
-
-window.onclick = function (event) {
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-};
